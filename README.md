@@ -1,17 +1,15 @@
-# Classroom Management System
+Este projeto foi desenvolvido como parte das atividades da disciplina **Desenvolvimento Web III** do curso de **Bacharelado em Sistemas de Informação** no **Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus Votuporanga**. O objetivo da atividade é estudar e implementar **Template Engines** no **Node.js**, utilizando as engines **EJS** e **Nunjucks**.
 
-Este projeto foi desenvolvido como parte das atividades da disciplina **Desenvolvimento Web III** do curso de **Bacharelado em Sistemas de Informação** no **Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus Votuporanga**. O objetivo da atividade é o estudo e implementação de **Template Engines** no **Node.js**, utilizando as engines **EJS** e **Nunjucks**.
-
-### Instituição
+## Instituição
 **INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE SÃO PAULO - CAMPUS VOTUPORANGA**
 
-### Curso
+## Curso
 **Bacharelado em Sistemas de Informação**
 
-### Disciplina
+## Disciplina
 **Desenvolvimento Web III - 6º Semestre - Turma A**
 
-### Professor
+## Professor
 **Dr. Evandro Jardini**
 
 ---
@@ -20,11 +18,11 @@ Este projeto foi desenvolvido como parte das atividades da disciplina **Desenvol
 
 O **Classroom Management System** é um sistema simples de gerenciamento de salas de aula, implementado em **Node.js** com o uso das template engines **EJS** e **Nunjucks**. O sistema possui duas páginas HTML principais:
 
-- **Página Inicial (index.html)**: Página principal que será acessada quando o usuário acessar a rota principal do servidor. Ela contém um título e um link para a página de manutenção de salas de aula.
+- **Página Inicial (index.html)**: Página acessada na rota principal, contendo um título e um link para a página de manutenção de salas de aula.
   
-- **Página de Manutenção de Salas (manutSalaDeAula.html)**: Exibe uma tabela com as informações das salas de aula cadastradas, tais como ID, descrição, localização e capacidade.
+- **Página de Manutenção de Salas (manutSalaDeAula.html)**: Exibe uma tabela com as informações das salas de aula cadastradas, como ID, descrição, localização e capacidade.
 
-### Requisitos Técnicos
+## Requisitos Técnicos
 
 - **Node.js**
 - **Express**
@@ -32,29 +30,28 @@ O **Classroom Management System** é um sistema simples de gerenciamento de sala
 - **Nunjucks**
 - **Bootstrap**
 
-### Estrutura do Projeto
+## Estrutura do Projeto
 
-O projeto é dividido em dois servidores diferentes, cada um utilizando um template engine específico:
+O projeto é dividido em dois servidores, cada um utilizando um template engine específico:
 
 1. **srvFrontEJS/**: Servidor utilizando o template engine **EJS**.
 2. **srvFrontNJK/**: Servidor utilizando o template engine **Nunjucks**.
 
-Cada servidor possui sua própria estrutura de arquivos e templates. Ambos os servidores expõem as seguintes rotas:
-
+### Rotas principais:
 - **/**: Rota principal que carrega a página inicial (index).
-- **/manutSalaDeAula**: Rota para a página de manutenção de salas de aula, exibindo a tabela com as salas cadastradas.
+- **/manutSalaDeAula**: Exibe a tabela de salas de aula cadastradas.
 
 ## Como Executar o Projeto
 
 ### Requisitos:
 - **Node.js** instalado.
 
-### Passos:
+### Passos para execução:
 
 1. Clone o repositório para o seu ambiente local:
    ```bash
-   git clone [link-do-repositorio]
-   cd projeto
+   git clone https://github.com/Heitorccf/EduClassrooms.git
+   cd EduClassrooms
    ```
 
 2. Acesse o diretório do servidor EJS e instale as dependências:
@@ -88,24 +85,24 @@ Cada servidor possui sua própria estrutura de arquivos e templates. Ambos os se
 
 ## Estrutura de Pastas
 
-```
+```bash
 projeto/
 │
 ├── srvFrontEJS/
-│   ├── public/               # Arquivos estáticos (CSS, JS, imagens)
-│   ├── views/                # Templates EJS
-│   │   ├── index.ejs         # Página inicial
+│   ├── public/                 # Arquivos estáticos (CSS, JS, imagens)
+│   ├── views/                  # Templates EJS
+│   │   ├── index.ejs           # Página inicial
 │   │   ├── manutSalaDeAula.ejs # Página de manutenção de salas
-│   └── server.js             # Servidor Node.js usando Express e EJS
+│   └── server.js               # Servidor Node.js usando Express e EJS
 │
 ├── srvFrontNJK/
-│   ├── public/               # Arquivos estáticos (CSS, JS, imagens)
-│   ├── views/                # Templates Nunjucks
-│   │   ├── index.html        # Página inicial
-│   │   ├── manutSalaDeAula.html # Página de manutenção de salas
-│   └── server.js             # Servidor Node.js usando Express e Nunjucks
+│   ├── public/                 # Arquivos estáticos (CSS, JS, imagens)
+│   ├── views/                  # Templates Nunjucks
+│   │   ├── index.html          # Página inicial
+│   │   ├── manutSalaDeAula.html# Página de manutenção de salas
+│   └── server.js               # Servidor Node.js usando Express e Nunjucks
 │
-└── README.md                 # Documentação do projeto
+└── README.md                   # Documentação do projeto
 ```
 
 ## Funcionalidades Implementadas
